@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+
+from ec2_interaccount import sync_security_group
+from sys import exit
+
+def main():
+    runtime = sync_security_group()
+    return runtime.run()
+
+if __name__ == '__main__':
+    exit(main())
